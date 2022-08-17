@@ -3,14 +3,38 @@ import styled from 'styled-components'
 
 const Conatainer = styled.div`
     height: 60px;
-    width: 100px;
-    background-color: black;
 `
+const Wrappper = styled.div`
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+`
+
+const Left = styled.div`
+    flex: 1;
+`
+const Title = styled.span`
+    font-size: 30px;
+    cursor: pointer;
+`
+const Center = styled.div`
+    flex: 1;
+`
+const Right = styled.div`
+    flex: 1;
+`
+
 
 const Navbar = () => {
     return (
         <Conatainer>
-            Navbar
+            <Wrappper>
+              <Left>
+                <Title>BreezyWorld</Title>
+              </Left>
+              <Center>Center</Center>
+              <Right>Right</Right>
+            </Wrappper>
         </Conatainer>
     )
 }
