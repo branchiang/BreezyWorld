@@ -1,3 +1,5 @@
+
+import { Person } from '@material-ui/icons'
 import React from 'react'
 import styled from 'styled-components'
 
@@ -33,7 +35,10 @@ const Navbar = () => {
                 <Title>BreezyWorld</Title>
               </Left>
               <Center>Center</Center>
-              <Right>Right</Right>
+              <Right>
+            
+                <Person></Person>
+              </Right>
             </Wrappper>
         </Conatainer>
     )
