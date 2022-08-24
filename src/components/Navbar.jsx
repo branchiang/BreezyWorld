@@ -5,8 +5,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 const Conatainer = styled.div`
-    height: 30px;
-    padding-bottom: 40px;
+    padding: 0px 30px;
 
 `
 const Wrappper = styled.div`
@@ -29,7 +28,7 @@ const Center = styled.div`
     flex: 3;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
 
 
 `
@@ -42,9 +41,10 @@ const Right = styled.div`
     flex: 1;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
 `
 const IconContainer = styled.div`
+    
     font-size: 14px;
     cursor: pointer;
     display: flex;
