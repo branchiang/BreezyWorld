@@ -29,7 +29,7 @@ const Center = styled.div`
     flex: 3;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-evenly;
 
 
 `
