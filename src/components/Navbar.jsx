@@ -1,7 +1,6 @@
 
 import { Badge } from '@material-ui/core'
 import { Person, ShoppingCartOutlined } from '@material-ui/icons'
-//import { ShoppingCart } from '@material-ui/icons'
 import React from 'react'
 import styled from 'styled-components'
 
@@ -29,7 +28,7 @@ const Center = styled.div`
     flex: 3;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
 
 
 `
