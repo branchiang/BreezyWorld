@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import HeroBgImg from '../../src/heroImg.jpg'
+import HeroBgImg from '../../src/images/heroImg.jpg'
 
 const HeroContainer = styled.div`
   background: #0c0c0c;
