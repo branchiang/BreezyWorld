@@ -14,11 +14,8 @@ const Home = () => {
       <Hero/>
       <Categories/>
       <Products/>
-<<<<<<< HEAD
       <OurPromiseSec/>
-=======
       <Footer/>
->>>>>>> fc99ce5eb4fbfb72f1a59a7ba57ca44bcf866a41
     </div>
   )
 }
