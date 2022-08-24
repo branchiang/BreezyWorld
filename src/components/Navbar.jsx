@@ -6,6 +6,7 @@ import styled from 'styled-components'
 
 const Container = styled.div`
     padding: 0px 30px;
+    background-color: #F2F0F1;
 
 `
 const Wrapper = styled.div`
@@ -28,7 +29,7 @@ const Center = styled.div`
     flex: 3;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
 
 
 `
