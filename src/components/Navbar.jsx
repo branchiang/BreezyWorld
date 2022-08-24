@@ -1,43 +1,79 @@
 
-import { Person } from '@material-ui/icons'
+import { Badge } from '@material-ui/core'
+import { Person, ShoppingCart, ShoppingCartOutlined } from '@material-ui/icons'
 import React from 'react'
 import styled from 'styled-components'
 
 const Conatainer = styled.div`
-    height: 60px;
+    height: 30px;
+    padding-bottom: 40px;
+
 `
 const Wrappper = styled.div`
-    padding: 10px 20px;
     display: flex;
+    align-items: center;
     justify-content: space-between;
+    
 `
 
 const Left = styled.div`
     flex: 1;
+    text-align: left;
 `
-const Title = styled.span`
-    font-size: 30px;
+const Title = styled.h1`
+    font-weight: bold;
     cursor: pointer;
 `
+
 const Center = styled.div`
-    flex: 1;
+    flex: 3;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+
+`
+const MenuItem = styled.div`
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 50px;
 `
 const Right = styled.div`
     flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 `
+const IconContainer = styled.div`
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
 
+`
 
 const Navbar = () => {
     return (
         <Conatainer>
             <Wrappper>
               <Left>
-                <Title>BreezyWorld</Title>
+                <Title >BreezyWorld</Title>
               </Left>
-              <Center>Center</Center>
+              <Center>
+                <MenuItem><b>Home</b></MenuItem>
+                <MenuItem>Shop</MenuItem>
+                <MenuItem>Services</MenuItem>
+                <MenuItem>Contact Us</MenuItem>
+              </Center>
               <Right>
-            
-                <Person></Person>
+                <MenuItem>Sign In</MenuItem>
+                <IconContainer>
+                    <Badge badgeContent={4} color="primary">
+                         <ShoppingCartOutlined></ShoppingCartOutlined>
+                    </Badge>
+                    <Person></Person>
+                </IconContainer>
               </Right>
             </Wrappper>
         </Conatainer>
