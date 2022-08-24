@@ -3,6 +3,7 @@ import { Facebook, Instagram, LinkedIn, MailOutline, Phone, Pinterest, Room, Twi
 import styled from 'styled-components'
 
 const Container = styled.div`
+    padding: 50px;
     display: flex;
 `
 

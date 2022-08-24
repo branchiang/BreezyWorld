@@ -5,17 +5,27 @@ import CategoryItem from './CategoryItem';
 
 const Container = styled.div`
   display: flex;
-  padding: 200px 50px;
+  padding: 50px 50px;
+  margin-bottom: 100px;
   justify-content: space-between;
+`;
+
+const Title = styled.h1`
+  margin-top: 150px;
+  font-size: 40px;
+  text-align: center;
 `;
 
 const Categories = () => {
   return (
-    <Container>
-      {categories.map((item) => (
-        <CategoryItem item={item} key={item.id} />
-      ))}
-    </Container>
+    <div>
+      <Title>Collections</Title>
+      <Container>
+        {categories.map((item) => (
+          <CategoryItem item={item} key={item.id} />
+        ))}
+      </Container>
+    </div>
   );
 };
 
