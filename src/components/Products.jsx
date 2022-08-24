@@ -4,10 +4,11 @@ import { popularProducts } from '../data';
 import Product from './Product';
 
 const Container= styled.div`
-padding: 50px;
-display: flex;
-flex-wrap: wrap;
-justify-content: space-between;
+  padding: 50px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 `;
 
 const Title = styled.h1`

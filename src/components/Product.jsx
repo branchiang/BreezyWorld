@@ -25,9 +25,9 @@ const Info = styled.div`
 
 const Container= styled.div`
   flex: 1;
-  margin: 10px;
+  margin: 15px;
   min-width: 280px;
-  height: 350px;
+  height: 300px;
   display: flex;
   align-items: center;
   justify-content: center;
