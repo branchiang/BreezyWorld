@@ -6,6 +6,7 @@ const Container = styled.div`
     padding: 20px 50px;
     display: flex;
     background-color: #74482F;
+    color: white;
 `
 
 const Left = styled.div`
