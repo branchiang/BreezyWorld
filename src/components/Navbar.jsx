@@ -26,10 +26,10 @@ const Title = styled.h1`
 `
 
 const Center = styled.div`
-    flex: 3;
+    flex: 1;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
 
 
 `
