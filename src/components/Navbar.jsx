@@ -1,14 +1,15 @@
 
 import { Badge } from '@material-ui/core'
-import { Person, ShoppingCart, ShoppingCartOutlined } from '@material-ui/icons'
+import { Person, ShoppingCartOutlined } from '@material-ui/icons'
+//import { ShoppingCart } from '@material-ui/icons'
 import React from 'react'
 import styled from 'styled-components'
 
-const Conatainer = styled.div`
+const Container = styled.div`
     padding: 0px 30px;
 
 `
-const Wrappper = styled.div`
+const Wrapper = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -55,8 +56,8 @@ const IconContainer = styled.div`
 
 const Navbar = () => {
     return (
-        <Conatainer>
-            <Wrappper>
+        <Container>
+            <Wrapper>
               <Left>
                 <Title >BreezyWorld</Title>
               </Left>
@@ -75,8 +76,8 @@ const Navbar = () => {
                     <Person></Person>
                 </IconContainer>
               </Right>
-            </Wrappper>
-        </Conatainer>
+            </Wrapper>
+        </Container>
     )
 }
 
