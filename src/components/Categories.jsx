@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import { categories } from '../data';
 import styled from 'styled-components';
 import CategoryItem from './CategoryItem';

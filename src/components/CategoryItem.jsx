@@ -26,7 +26,7 @@ const Info = styled.div`
   justify-content: center;
 `;
 
-const Title = styled.h1`
+const Title = styled.h2`
     color:white;
     margin-bottom: 20px;
 `;
