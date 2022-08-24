@@ -1,6 +1,6 @@
 
 import { Badge } from '@material-ui/core'
-import { Person, ShoppingCart, ShoppingCartOutlined } from '@material-ui/icons'
+import { Person, ShoppingCartOutlined } from '@material-ui/icons'
 import React from 'react'
 import styled from 'styled-components'
 
@@ -26,12 +26,10 @@ const Title = styled.h1`
 `
 
 const Center = styled.div`
-    flex: 1;
+    flex: 3;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-
-
+    justify-content: center;
 `
 const MenuItem = styled.div`
     font-size: 20px;
