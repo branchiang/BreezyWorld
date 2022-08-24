@@ -9,12 +9,13 @@ background-color: #E5E5E5;
 `;
 
 const Title = styled.h1`
-  margin: 20px;
+  text-align: center;
 `;
 
 const FilterContainer = styled.div`
   display: flex;
   justify-content: space-between;
+  margin-left: 50px;
 `;
 
 const Filter = styled.div`
