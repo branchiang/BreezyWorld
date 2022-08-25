@@ -4,7 +4,7 @@ import styled from "styled-components";
 const Container = styled.div`
   height: 60vh;
   padding: 10px 50px;
-  background-color: #fcf5f5;
+  background-color: #D8BBA9;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -19,7 +19,7 @@ const Desc = styled.p`
 padding-left: 50px;
 padding-right: 50px;
   font-size: 15px;
-  font-weight: 300;
+  font-weight: 400;
   margin-bottom: 20px;
 `;
 

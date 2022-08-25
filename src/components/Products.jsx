@@ -11,16 +11,11 @@ const Container= styled.div`
   justify-content: space-between;
 `;
 
-const Title = styled.h1`
-  font-size: 40px;
-  text-align: center;
-`;
 
 
 const Products = () => {
   return (
     <div>
-      <Title>Featured Products</Title>
       <Container>
         {popularProducts.map((item) => (
           <Product item={item} key={item.id} />

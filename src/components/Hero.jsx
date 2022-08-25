@@ -62,9 +62,9 @@ const HeroBtn = styled.div`
 
 const Button = styled.button`
   padding: 10px;
-  font-size: 20px;
-  background-color: #74482F;
-  color: white;
+  font-size: 18px;
+  background-color: #D8BBA9;
+  color: black;
   cursor: pointer;
 `;
 
@@ -83,7 +83,7 @@ const Hero = () => {
           Real comfort, visual and physical, is vital to every room 
         </HeroP>
         <HeroBtn>
-          <Button>Shop Now</Button>
+          <Button>SHOP NOW</Button>
         </HeroBtn>
       </HeroContent>
 

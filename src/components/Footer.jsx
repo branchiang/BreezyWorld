@@ -3,8 +3,10 @@ import { Facebook, Instagram, LinkedIn, MailOutline, Phone, Pinterest, Room, Twi
 import styled from 'styled-components'
 
 const Container = styled.div`
-    padding: 50px;
+    padding: 20px 50px;
     display: flex;
+    background-color: #74482F;
+    color: white;
 `
 
 const Left = styled.div`
