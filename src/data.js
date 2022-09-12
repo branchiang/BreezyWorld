@@ -20,7 +20,7 @@ export const categories = [
 export const popularProducts = [
     {
       id:1,
-      img:"https://images.pexels.com/photos/279618/pexels-photo-279618.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      img:"https://images.pexels.com/photos/1209776/pexels-photo-1209776.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     },
     {
       id:2,

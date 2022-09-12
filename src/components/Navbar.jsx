@@ -3,6 +3,7 @@ import { Badge } from '@material-ui/core'
 import { Person, ShoppingCartOutlined } from '@material-ui/icons'
 import React from 'react'
 import styled from 'styled-components'
+import {Link} from 'react-router-dom'
 
 const Container = styled.div`
     padding: 0px 30px;
@@ -58,24 +59,43 @@ const Navbar = () => {
     return (
         <Container>
             <Wrapper>
+
               <Left>
-                <Title >BreezyWorld</Title>
+                <Title ><Link to="/" className="link">
+                    BreezyWorld
+                </Link></Title>
               </Left>
+
               <Center>
-                <MenuItem><b>Home</b></MenuItem>
-                <MenuItem>Shop</MenuItem>
-                <MenuItem>Services</MenuItem>
-                <MenuItem>Contact Us</MenuItem>
+                <MenuItem><Link to="/" className="link">
+                        Home
+                    </Link></MenuItem>
+                <MenuItem><Link to="/products" className="link">
+                        Shop
+                    </Link></MenuItem>
+                {/* <MenuItem>Services</MenuItem>
+                <MenuItem>Contact Us</MenuItem> */}
               </Center>
+
               <Right>
-                <MenuItem>Sign In</MenuItem>
+                
+                <MenuItem>
+                    <Link to="/register" className="link">
+                    Sign Up
+                    </Link>
+                </MenuItem>
                 <IconContainer>
-                    <Badge badgeContent={4} color="primary">
+                    <Badge badgeContent={2} color="primary">
+                    <Link to="/cart" className="link">
                          <ShoppingCartOutlined></ShoppingCartOutlined>
+                         </Link>
                     </Badge>
+                    <Link to="/login" className="link">
                     <Person></Person>
+                    </Link>
                 </IconContainer>
               </Right>
+
             </Wrapper>
         </Container>
     )

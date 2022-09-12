@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 import {
-  FavoriteBorderOutlined,
   SearchOutlined,
   ShoppingCartOutlined,
 } from "@material-ui/icons";
+import {Link} from 'react-router-dom';
 
 
 const Info = styled.div`
@@ -68,14 +68,18 @@ const Product = ({ item }) => {
       <Image src={item.img} />
       <Info>
         <Icon>
+          <Link to="/cart" className="link">
           <ShoppingCartOutlined />
+          </Link>
         </Icon>
         <Icon>
+          <Link to="/product/:productId" className="link">
           <SearchOutlined />
+          </Link>
         </Icon>
-        <Icon>
+        {/* <Icon>
           <FavoriteBorderOutlined />
-        </Icon>
+        </Icon> */}
       </Info>
         
     </Container>

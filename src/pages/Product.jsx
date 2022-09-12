@@ -135,6 +135,7 @@ const Product = () => {
             <Filter>
               <FilterTitle>Type</FilterTitle>
               <FilterSize>
+                <FilterSizeOption>None</FilterSizeOption>
                 <FilterSizeOption>Chair</FilterSizeOption>
                 <FilterSizeOption>Tables</FilterSizeOption>
                 <FilterSizeOption>Sofas</FilterSizeOption>
@@ -157,8 +158,4 @@ const Product = () => {
   );
 };
 
-import { Filter } from '@material-ui/icons'
-import React from 'react'
-import styled from 'styled-components'
-import Footer from '../components/Footer'
-import Navbar from '../components/Navbar'
+export default Product;

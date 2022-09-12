@@ -1,6 +1,7 @@
 import React from 'react'
 import { Facebook, Instagram, LinkedIn, MailOutline, Phone, Pinterest, Room, Twitter } from '@material-ui/icons';
 import styled from 'styled-components'
+import {Link} from 'react-router-dom';
 
 const Container = styled.div`
     padding: 20px 50px;
@@ -102,12 +103,27 @@ const Footer = () => {
             <Center>
                 <Title>Useful Links</Title>
                 <List>
-                    <ListItem>Home</ListItem>
-                    <ListItem>Cart</ListItem>
-                    <ListItem>Products</ListItem>
-                    <ListItem>Services</ListItem>
+                    <ListItem>
+                        <Link to="/" className="link">
+                            Home
+                        </Link>
+                    </ListItem>
+                    <ListItem>
+                        <Link to="/cart" className="link">
+                            Cart
+                        </Link>
+                    </ListItem>
+                    <ListItem>
+                        <Link to="/products" className="link">
+                            Products
+                        </Link>
+                    </ListItem>
+                    
+
+
+                    {/* <ListItem>Services</ListItem>
                     <ListItem>Profile</ListItem>
-                    <ListItem>Contact Us</ListItem>
+                    <ListItem>Contact Us</ListItem> */}
                 </List>
             </Center>
             <Right>
