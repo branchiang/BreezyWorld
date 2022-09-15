@@ -1,29 +1,31 @@
-
 import { Badge } from '@material-ui/core'
 import { Person, ShoppingCartOutlined } from '@material-ui/icons'
 import React from 'react'
 import styled from 'styled-components'
 import {Link} from 'react-router-dom'
+import { mobile } from "../responsive";
 
 const Container = styled.div`
     padding: 0px 30px;
     background-color: #F2F0F1;
+    ${mobile({ height: "50px" })}
 
 `
 const Wrapper = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
+    ${mobile({ padding: "10px 0px" })}
 `
 
 const Left = styled.div`
     flex: 1;
     text-align: left;
 `
-const Title = styled.h1`
+const Logo = styled.h1`
     font-weight: bold;
     cursor: pointer;
+    ${mobile({ fontSize: "24px" })}
 `
 
 const Center = styled.div`
@@ -31,19 +33,19 @@ const Center = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-
-
 `
 const MenuItem = styled.div`
     font-size: 20px;
     cursor: pointer;
     margin-left: 50px;
+    ${mobile({ fontSize: "12px", marginLeft: "10px" })}
 `
 const Right = styled.div`
     flex: 1;
     display: flex;
     align-items: center;
     justify-content: center;
+    ${mobile({ flex: 2, justifyContent: "center" })}
 `
 const IconContainer = styled.div`
     
@@ -61,9 +63,9 @@ const Navbar = () => {
             <Wrapper>
 
               <Left>
-                <Title ><Link to="/" className="link">
+                <Logo><Link to="/" className="link">
                     BreezyWorld
-                </Link></Title>
+                </Link></Logo>
               </Left>
 
               <Center>
